@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FATHI BOUTIQUE</string>
+    <string name="welcome">Welcome To Fathi Boutique</string>
+    <string name="forgot">Enter Your Email address\n
+        \n we\'ll send you an email to reset your password</string>
+
+
+</resources>
