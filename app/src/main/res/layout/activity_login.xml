@@ -7,14 +7,13 @@
     android:orientation="vertical"
     android:gravity="center_horizontal"
     android:background="#FFFFFF"
-    tools:context=".view.LoginActivity">
+    tools:context=".view.ui.LoginActivity">
 
     <ImageView
         android:layout_width="480dp"
         android:layout_height="350dp"
-        android:src="@drawable/pu"
+        android:src="@drawable/onl"
         android:scaleType="fitXY"
-        android:layout_marginRight="35dp"
         android:layout_marginTop="20dp"/>
     <TextView
         android:layout_width="wrap_content"

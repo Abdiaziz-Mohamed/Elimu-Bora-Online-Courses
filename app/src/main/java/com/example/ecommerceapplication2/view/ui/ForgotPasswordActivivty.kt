@@ -1,4 +1,4 @@
-package com.example.ecommerceapplication2.view
+package com.example.ecommerceapplication2.view.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

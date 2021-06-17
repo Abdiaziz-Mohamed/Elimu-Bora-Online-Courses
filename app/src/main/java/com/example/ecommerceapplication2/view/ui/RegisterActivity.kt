@@ -1,4 +1,4 @@
-package com.example.ecommerceapplication2.view
+package com.example.ecommerceapplication2.view.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import com.example.ecommerceapplication2.R
+import com.example.ecommerceapplication2.view.models.User
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_register.*
 
@@ -44,7 +45,6 @@ class RegisterActivity : AppCompatActivity() {
                 if (task.isSuccessful) {
 
                     Toast.makeText(this, "Registered Successful", Toast.LENGTH_LONG).show()
-
 
                 } else {
 

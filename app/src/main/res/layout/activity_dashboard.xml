@@ -1,20 +1,348 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/yellow"
-    tools:context=".view.DashboardActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/anim4"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_gravity="end"
+        android:layout_margin="4dp"
+        android:src="@drawable/menoo" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:text="Welcome Back\n To Studies!"
+        android:textSize="35sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+        android:letterSpacing="0.03"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/search_iconi"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Search for new Knowledge"
+            android:textColor="#305f72"
+            android:gravity="center_vertical"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:letterSpacing="0.04"
+            android:layout_marginLeft="20dp"/>
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/search_icon"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="22dp"
+            android:layout_marginRight="20dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/st"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Learning \n new Staff"
+            android:textSize="26dp"
+            android:textColor="#305f72"
+            android:fontFamily="sans-serif-black"
+            android:letterSpacing="0.04"
+            android:paddingTop="20dp"
+            android:layout_marginLeft="10dp"/>
+
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cat2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categories"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="35dp"/>
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/ar3"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Courses in Progress"
+        android:textStyle="bold"
+        android:textSize="23dp"
+        android:textColor="#305f72"
+        android:letterSpacing="0.02"
+        android:layout_marginTop="-10dp"
+        android:layout_marginLeft="13dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c1"
+            android:layout_width="390dp"
+            android:layout_height="85dp"
+            app:cardBackgroundColor="#B7EF6D"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="5dp"
+            android:layout_marginBottom="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp"/>
+            <ImageView
+                android:id="@+id/i1"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/xd"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adobe XD \n Prototyping"
+                android:layout_toRightOf="@id/i1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="-9dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="#305f72"
+                android:letterSpacing="0.03"
+                android:layout_marginLeft="95dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 Hours, 19 lessons"
+                android:layout_toRightOf="@id/i1"
+                android:layout_below="@id/t1"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="#EC474B"
+                android:layout_marginLeft="95dp"/>
+
+            <TextView
+                android:id="@+id/p1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25%"
+                android:layout_toRightOf="@id/t1"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textColor="#305f72"
+                android:layout_marginLeft="95dp"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/play"
+                android:layout_toRightOf="@id/p1"
+                android:layout_gravity="end"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c2"
+            android:layout_below="@id/c1"
+            android:layout_width="390dp"
+            android:layout_height="88dp"
+            app:cardBackgroundColor="#B7EF6D"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="5dp"
+            android:layout_marginBottom="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp"/>
+            <ImageView
+                android:id="@+id/i2"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/skrtch"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sketch Shortcuts \n and tricks"
+                android:layout_toRightOf="@id/i2"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="-9dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="#305f72"
+                android:letterSpacing="0.03"
+                android:layout_marginLeft="95dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 Hours, 19 lessons"
+                android:layout_toRightOf="@id/i2"
+                android:layout_below="@id/t2"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="#EC474B"
+                android:layout_marginLeft="95dp"/>
+
+            <TextView
+                android:id="@+id/p2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25%"
+                android:layout_toRightOf="@id/t2"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textColor="#305f72"
+                android:layout_marginLeft="95dp"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/play"
+                android:layout_toRightOf="@id/p2"
+                android:layout_gravity="end"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_below="@id/c2"
+            android:layout_width="390dp"
+            android:layout_height="88dp"
+            app:cardBackgroundColor="#B7EF6D"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="5dp"
+            android:layout_marginBottom="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp"/>
+            <ImageView
+                android:id="@+id/i3"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/ui"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/t3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UI Motion Design \n In After Effects"
+                android:layout_toRightOf="@id/i3"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:textColor="#305f72"
+                android:letterSpacing="0.03"
+                android:layout_marginTop="-9dp"
+                android:layout_marginLeft="95dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 Hours, 19 lessons"
+                android:layout_toRightOf="@id/i3"
+                android:layout_below="@id/t3"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="#EC474B"
+                android:layout_marginLeft="95dp"/>
+
+            <TextView
+                android:id="@+id/p3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25%"
+                android:layout_toRightOf="@id/t3"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textColor="#305f72"
+                android:layout_marginLeft="95dp"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/play"
+                android:layout_toRightOf="@id/p3"
+                android:layout_gravity="end"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
 
 
 
